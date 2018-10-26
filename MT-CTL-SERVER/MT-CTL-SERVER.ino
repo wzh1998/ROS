@@ -432,7 +432,8 @@ bool checkValid() {
 void motionDataSend() {
 //  roll
   mapFunc();
-  if(checkValid()) {
+//  if(checkValid()) {
+    if(true) {
     RX = roll;
     RY = pitch2; 
     RZ = pitch; 
@@ -548,5 +549,5 @@ void loop() {
  
 //  if(-60.0 <= roll && roll <= 60.0 && 20.0 <= pitch && pitch <= 60 ) motionDataSend();
   motionDataSend();
-  delay(1500);
+  delay(1100);
 }
